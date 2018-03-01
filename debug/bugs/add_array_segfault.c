@@ -14,11 +14,17 @@ int main(int argc, char **argv) {
   int *a, *b;
   int n = 3;
   int i, sum;
+  a = malloc(n*sizeof(int));    //allocateo el espacio de memoria que necesito para a y b
+  b = malloc(n*sizeof(int));
+
   for (i = 0; i < n; i++) {
     a[i] = i;
     b[i] = i;
   }
   sum = add_array(a, b, 3);
   printf("The addition is %d\n", sum);
+
+  free(a);                     //deallocateo el espacio que antes había asignado para a y b porque ya no lo necesito
+  free(b);
   return 0;
 }
