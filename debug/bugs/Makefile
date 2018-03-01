@@ -1,6 +1,6 @@
 .PHONY: default help object executable all clean segfault dynamic static nobugs
 CC = gcc 
-CFLAGS = 
+CFLAGS = -g 
 
 LD = $(CC)
 
