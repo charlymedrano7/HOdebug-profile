@@ -3,7 +3,8 @@
 int add_array(int *a, int *b, int n){
   int sum = 0;
   int i = 0;
-  for (i = 0; i <= n + 1; i++) {     //este loop está para el ojete, se pasa del vector y hecha moco
+//  for (i = 0; i <= n + 1; i++) {     //este loop está para el ojete, se pasa del vector y hecha moco
+  for (i=0; i < n; i++) {
     sum += abs(a[i]);
     sum += abs(b[i]);
   };
